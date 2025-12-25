@@ -1,196 +1,211 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>foyda.uz – Aqlli xaridlar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./style.css">
 
-  <style>
-    :root {
-      --bg-main: #0c1913;
-      --bg-card: #12251c;
-      --green: #2ecc71;
-      --green-soft: #7bed9f;
-      --green-hover: #27ae60;
-      --white: #ffffff;
-      --text-soft: #bfe6d1;
-      --radius: 18px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: var(--bg-main);
-      color: var(--white);
-    }
-
-    /* TOP */
-    .top {
-      text-align: center;
-      padding: 30px 15px;
-    }
-
-    .logo {
-      font-size: 40px;
-      font-weight: bold;
-      color: var(--green);
-    }
-
-    .logo span {
-      color: var(--white);
-    }
-
-    .subtitle {
-      color: var(--text-soft);
-      margin-top: 8px;
-    }
-
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    .hero h1 {
-      font-size: 28px;
-    }
-
-    .hero h1 span {
-      color: var(--green);
-    }
-
-    .hero p {
-      color: var(--text-soft);
-      margin-top: 10px;
-    }
-
-    /* CARDS */
-    .cards {
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 22px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card img {
-      width: 100%;
-      display: block;
-    }
-
-    .card h2 {
-      margin: 15px;
-    }
-
-    .desc {
-      margin: 0 15px;
-      color: var(--text-soft);
-      font-size: 14px;
-    }
-
-    .bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-    }
-
-    .price {
-      color: var(--green-soft);
-      font-weight: bold;
-    }
-
-    /* BUTTON */
-    .btn {
-      padding: 10px 18px;
-      background: var(--green);
-      color: #000;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .btn:hover {
-      background: var(--green-hover);
-      transform: scale(1.05);
-    }
-
-    /* FOOTER */
-    .footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: var(--text-soft);
-    }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container header-container">
+            <img class="header-img" src="./Group 190.svg" alt="">
+            <h1 class="header-title">Product</h1>
 
-  <header class="top">
-    <div class="logo">foyda<span>.uz</span></div>
-    <p class="subtitle">Har bir xariddan foyda ol</p>
-  </header>
+            <div class="container header-box">
+                <nav class="header-nav">
+                    <ul class="header-ul">
+                        <li class="header-li"><a class="header-link" href="">Product</a></li>
+                        <li class="header-li"><a class="header-link" href="">Customers</a></li>
+                        <li class="header-li"><a class="header-link" href="">Pricing</a></li>
+                        <li class="header-li"><a class="header-link" href="">Resources</a></li>
+                    </ul>
+                </nav>
 
-  <section class="hero">
-    <h1>Eng foydali takliflar <span>bir joyda</span></h1>
-    <p>Ishonchli do‘konlar · Halol narxlar · Real foyda</p>
-  </section>
+                <button class="header-btn">Sign In</button>
+                <button class="header-button">Sign Up</button>
+                <img class="mini-btn" src="./Frame 49.svg" alt="">
+                <img class="header-img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/330px-Hamburger_icon.svg.png"
+                    alt="">
+            </div>
+        </div>
+    </header>
 
-  <main class="cards">
+    <main class="main">
+        <section>
+            <div class="container main-container">
+                <h2 class="clients">Our Clients</h2>
+                <ul class="clients-ul">
+                    <li><img src="./Airbnb Logo (1).svg" alt=""></li>
+                    <li><img src="./Google Logo.svg" alt=""></li>
+                    <li><img src="./Microsoft Logo.svg" alt=""></li>
+                    <li><img src="./FedEx Logo.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
 
-    <article class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Mahsulot">
-      <h2>Smart soat</h2>
-      <p class="desc">Sog‘liq nazorati va zamonaviy dizayn</p>
-      <div class="bottom">
-        <span class="price">350 000 so‘m</span>
-        <a href="#" class="btn">Sotib olish</a>
-      </div>
-    </article>
+        <section>
+            <div class="container business-container">
+                <h2 class="business-main-title">Why Choose Product?</h2>
 
-    <article class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Mahsulot">
-      <h2>Simsiz quloqchin</h2>
-      <p class="desc">Toza ovoz va uzoq quvvat</p>
-      <div class="bottom">
-        <span class="price">180 000 so‘m</span>
-        <a href="#" class="btn">Sotib olish</a>
-      </div>
-    </article>
+                <div class="flex">
+                    <div class="business-box">
+                        <img src="./icon-1.svg" alt="icon">
+                        <h3 class="business-title">Special Business</h3>
+                        <p class="business-text">
+                            Product helps you see how many more days you need to work
+                            to reach your financial goal for the month and year.
+                        </p>
+                    </div>
 
-    <article class="card">
-      <img src="https://via.placeholder.com/400x250" alt="Mahsulot">
-      <h2>Powerbank</h2>
-      <p class="desc">Tez quvvat · Katta sig‘im</p>
-      <div class="bottom">
-        <span class="price">220 000 so‘m</span>
-        <a href="#" class="btn">Sotib olish</a>
-      </div>
-    </article>
+                    <div class="business-box">
+                        <img src="./icon-2.svg" alt="icon">
+                        <h3 class="business-title">Instant Result</h3>
+                        <p class="business-text">
+                            Product helps you see how many more days you need to work
+                            to reach your financial goal for the month and year.
+                        </p>
+                    </div>
 
-  </main>
+                    <div class="business-box">
+                        <img src="./icon-3.svg" alt="icon">
+                        <h3 class="business-title">Fastest way to organize</h3>
+                        <p class="business-text">
+                            Product helps you see how many more days you need to work
+                            to reach your financial goal for the month and year.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-  <footer class="footer">
-    © 2025 foyda.uz — Hamkorlik orqali daromad
-  </footer>
+            <div class="container service-container">
+                <h2 class="service-title">How Product Work?</h2>
 
+                <div class="service-box">
+                    <img class="service-box-img" src="./mac1.svg" alt="">
+                    <div class="box-2">
+                        <h4 class="box-title">STEP 1</h4>
+                        <h3 class="box-titl">Apply for a product</h3>
+                        <p class="box-text">
+                            Completing our easy step-by-step application form gives you access to
+                            multiple businesses with multiple products.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pay">
+                    <div class="box-2">
+                        <h4 class="box-title">STEP 2</h4>
+                        <h3 class="box-titl">Pay fully refundable</h3>
+                        <p class="box-text">
+                            Product will contact you instantly to receive payment of the Application Fee.
+                            If no offer is available, your fee will be fully refunded.
+                        </p>
+                    </div>
+                    <img src="./mac2.svg" alt="mac">
+                </div>
+
+                <div class="completion">
+                    <img src="./mac3.svg" alt="">
+                    <div class="box-2">
+                        <h4 class="box-title">STEP 3</h4>
+                        <h3 class="box-titl">Completion</h3>
+                        <p class="box-text">
+                            Product will continue to liaise between borrower and manager to process
+                            and complete a quick and efficient settlement.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="buton">Get in touch with us</button>
+            </div>
+
+            <div class="container offers">
+                <h2 class="offers-title">
+                    Join thousands of others who have already received offers
+                </h2>
+
+                <ul class="offers-ul">
+                    <li class="offers-li">
+                        <img src="./Image Placeholder.svg" alt="">
+                        <h2 class="busines">Business</h2>
+                        <p class="text">Cash Flow</p>
+                        <p class="text">Asset Backed</p>
+                        <p class="text">Receivables Finance</p>
+                        <p class="text-1">Find the best business product</p>
+                    </li>
+
+                    <li class="offers-li">
+                        <img src="./Image Placeholder-1.svg" alt="">
+                        <h2 class="busines">Enterprise</h2>
+                        <p class="text">Site Acquisition</p>
+                        <p class="text">Bridge</p>
+                        <p class="text">Development Financing</p>
+                        <p class="text-1">Find the best business product</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container join">
+                <div class="join-box">
+                    <h2 class="join-title">
+                        Join 100 Companies who boost their business with Product
+                    </h2>
+                    <button class="join-btn">Get This</button>
+                </div>
+                <img class="join-img" src="./Frame 18.svg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="images">
+                <img class="images-img" src="./Group 192.svg" alt="">
+                <nav>
+                    <img src="./Group 1340.svg" alt="">
+                    <img src="./Group 1342.svg" alt="">
+                    <img src="./Group 1341.svg" alt="">
+                </nav>
+            </div>
+
+            <div class="Resource">
+                <h4 class="Resource-title">Resource</h4>
+                <p class="Resource-text">About Us</p>
+                <p class="Resource-text">Blog</p>
+                <p class="Resource-text">Contact</p>
+                <p class="Resource-text">FAQ</p>
+            </div>
+
+            <div class="stuff">
+                <h4 class="Resource-title">Legal Stuff</h4>
+                <p class="Resource-text">Disclaimer</p>
+                <p class="Resource-text">Financing Policy</p>
+                <p class="Resource-text">Privacy</p>
+                <p class="Resource-text">Terms of Service</p>
+            </div>
+
+            <div class="legal">
+                <h2 class="legal-title">
+                    Knowing you're always on the best energy deal.
+                </h2>
+                <input class="legal-input" type="text">
+                <button class="legal-btn">Sign up Now</button>
+            </div>
+        </div>
+
+        <p class="container end-text">
+            Made With Love By Figmaland All Right Reserved
+        </p>
+    </footer>
 </body>
+
 </html>
