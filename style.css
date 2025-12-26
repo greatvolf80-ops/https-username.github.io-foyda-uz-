@@ -298,6 +298,7 @@ body {
     background: #02897a;
     margin-top: 165px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .join-title {
@@ -484,7 +485,7 @@ body {
         width: auto;
     }
 
-    .join-box{
+    .join-box {
         flex-direction: column;
     }
 
@@ -497,5 +498,22 @@ body {
         flex-wrap: wrap;
     }
 
-    
+    .join-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .join-title {
+        display: block;
+    }
+
+    .join {
+        height: auto;
+    }
+
+    .footer-container {
+        display: block;
+    }
+       
+
 }
